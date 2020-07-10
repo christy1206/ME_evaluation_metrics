@@ -9,7 +9,7 @@ Let say a 3x3 confusion matrix is named as:
 
 To obtain the **Acc** (Accuracy), **UAR** (Unweighted Average Recall), **UF1** (Unweighted F1-score) from the confusion matrix:
 
-A = confusionmat(predictedLabels, desiredLabels);
+A = confusionmat(predictedLabels, desiredLabels);\
 Acc = (A(1)+A(5)+A(9) )/ sum(A(:));\
 UAR = (A(1)/sum(A(1:3)) + A(5)/sum(A(4:6)) + A(9)/sum(A(7:9)))/3;\
 UF1 =( (2*A(1)/ (2*A(1)+A(2)+A(3)+A(4)+A(7)))+ (2*A(5)/ (2*A(5)+A(2)+A(8)+A(4)+A(6)))+ (2*A(9)/ (2*A(9)+A(3)+A(6)+A(7)+A(8))))/3;
